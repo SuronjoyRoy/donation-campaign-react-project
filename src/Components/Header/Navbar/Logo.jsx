@@ -2,7 +2,7 @@
 const Logo = () => {
     return (
         <div>
-            <img src="../../img/Logo.png" alt="logo.png" />
+            <img src="/public/img/Logo.png" alt="logo.png" />
         </div>
     );
 };
