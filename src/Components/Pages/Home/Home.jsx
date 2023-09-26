@@ -3,12 +3,11 @@ import Banner from "../../Header/Banner/Banner";
 import Cards from "../../Cards/Cards";
 
 const Home = () => {
-    const cardData = useLoaderData();
-    // console.log(cardData)
+    const cards = useLoaderData();
     return (
         <div>
             <Banner></Banner>
-            <Cards cardData ={Cards}></Cards>
+            <Cards cards ={cards}></Cards>
         </div>
     );
 };
