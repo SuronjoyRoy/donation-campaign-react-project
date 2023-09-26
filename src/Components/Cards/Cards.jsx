@@ -1,8 +1,10 @@
 
-const Cards = () => {
+const Cards = ({Cards}) => {
+
+    console.log(Cards)
     return (
         <div>
-            <h2>This is card sections</h2>
+            
         </div>
     );
 };

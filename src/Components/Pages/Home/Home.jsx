@@ -1,12 +1,14 @@
 import { useLoaderData } from "react-router-dom";
 import Banner from "../../Header/Banner/Banner";
+import Cards from "../../Cards/Cards";
 
 const Home = () => {
-    const myCard = useLoaderData();
-    console.log(myCard)
+    const cardData = useLoaderData();
+    // console.log(cardData)
     return (
         <div>
             <Banner></Banner>
+            <Cards cardData ={Cards}></Cards>
         </div>
     );
 };
