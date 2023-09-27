@@ -1,8 +1,12 @@
+import { useLoaderData, useParams } from "react-router-dom";
 import swal from "sweetalert";
 
-const CardShow = ({card}) => {
-
-    const {id,img,card_title,category,category_bg_color,card_bg_color,text_color,button_bg_color,btn_color,price,description}=card;
+const CardShow = () => {
+const{id}  = useParams()
+const cards = useLoaderData()
+const card = cards.find(card=>card.id==id)
+    console.log(cards)
+    const {img,card_title,button_bg_color,btn_color,price,description}=card;
 
     const handleDonation= ()=>{
 
@@ -18,6 +22,7 @@ const CardShow = ({card}) => {
 
         else {
 
+           // eslint-disable-next-line react/prop-types
            const isExit = donationItems.find(card => card.id == id)
            
 
@@ -28,6 +33,8 @@ const CardShow = ({card}) => {
             swal("Good job!","Donation Added!", "success");
  
            }
+
+
            else{
             swal("Error!","No Duplicate!", "error");
            }

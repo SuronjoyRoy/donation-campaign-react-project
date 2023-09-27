@@ -2,7 +2,8 @@
 import { Link } from 'react-router-dom';
 
 const Card = ({card}) => {
-    const {id,img,card_title,category,category_bg_color,card_bg_color,text_color}=card
+    const {id,img,card_title,category,category_bg_color,card_bg_color,text_color}=card;
+
     return (
             
         <Link to={`/cards/${id}`}>

@@ -1,20 +1,29 @@
 import { useEffect, useState } from "react";
-import { useLoaderData, useParams } from "react-router-dom";
-import CardShow from "./CardShow";
+import { useParams } from "react-router-dom";
+
 
 const SingleCard = () => {
-    const {id} = useParams()
-    const [card, setCard] = useState([])
+    const {id} = useParams();
+    const idCard =parseInt(id);
+    const [filter,setFilter] = useState([])
+    const [card, setCard] = useState([]);
 
-    const cards = useLoaderData()
+    console.log(filter)
+
     useEffect(()=>{
-        const findCard = cards.find(card=> card.id ==id)
-        setCard(findCard)
-    },[id,cards])
+       fetch('/public/Cards.json')
+        .then(res=> res.json())
+        .then(data => setCard(data))
+        const findCard = card.find(card => card.id ===idCard)
+        setFilter(findCard)
+
+    },[card, idCard]) 
     
     return (
         <div>
-             <CardShow card={card}></CardShow>               
+             {/* <CardShow card={filter}></CardShow> */}
+             <li>{filter.id}</li>
+             
         </div>
                 );
             };
