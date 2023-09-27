@@ -1,5 +1,5 @@
 
-const Banner = () => {
+const Banner = ({hanldSearch}) => {
     const bannerStyle = {
         backgroundImage: 'url(/public/img/Clothing.png)',
         backgroundSize: 'cover',
@@ -16,8 +16,8 @@ const Banner = () => {
                 <p className="absolute top-[70%] lg:top-[38%] left-[10%] md:left-[18%] lg:left-[30%] text-3xl font-bold text-[#0B0B0B] lg:mb-15" >I Grow By Helping People In Need</p>
                 
             <div className="input-group w-48 lg:w-72 absolute top-[50%] lg:top-[47%] left-[3%] md:left-[30%] lg:left-[35%]">
-                    <input type="text" placeholder="Search…" className="input input-bordered" />
-                    <button className="btn btn-secondary  bg-[#FF444A]">
+                    <input id="serchFilter" type="text" placeholder="Search…" className="input input-bordered" />
+                    <button onClick={hanldSearch} className="btn btn-secondary  bg-[#FF444A]">
                     Search
                 </button>
             </div>
