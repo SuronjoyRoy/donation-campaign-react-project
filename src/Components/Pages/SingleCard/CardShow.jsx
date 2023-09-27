@@ -58,7 +58,7 @@ const card = cards.find(card=>card.id==id)
             <img  className="w-[500px] lg:w-[1320px] h-72 lg:h-[590px] bg-black opacity-60 " src={img} alt="Shoes" />
             </figure>
 
-            <button onClick={handleDonation} style={{background: button_bg_color , text:btn_color }}  className="btn btn-primary text-[#FFF] absolute top-60 lg:top-[520px] lg:left-8 border-none">Donate ${price}</button>
+            <button onClick={handleDonation} style={{background: button_bg_color , text:btn_color }}  className="btn btn-primary text-[#FFF] absolute top-60 lg:top-[520px] md:left-[135px] lg:left-8 border-none">Donate ${price}</button>
         </div>
         <div className="card-body">
             <h2 className="card-title text-4xl font-extrabold">{card_title}</h2>
