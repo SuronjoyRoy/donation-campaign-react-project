@@ -11,7 +11,7 @@ const Home = () => {
     
 
     useEffect(()=>{
-        fetch('/public/Cards.json')
+        fetch('Cards.json')
         .then(res=> res.json())
         .then(data =>{
             setCards(data)

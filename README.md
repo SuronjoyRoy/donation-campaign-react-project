@@ -1,8 +1,5 @@
-# React + Vite
+- Scholarship Programs: The website should provide information about its scholarship programs for financially disadvantaged students. This information can include details about eligibility criteria, the application process, and the impact of scholarships on students' lives. Transparency in how scholarship funds are allocated and distributed is essential to assure donors that their contributions directly support education.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Hunger Relief Initiatives: Highlight the hunger relief initiatives supported by the website. This may involve partnerships with food banks, community kitchens, or other organizations that provide meals to those in need. Include statistics or stories that illustrate the impact of these initiatives, such as the number of meals served or the communities reached.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Financial Transparency: Ensure that the website shares its financial oney is going and the real-world impact it's making.

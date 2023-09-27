@@ -11,7 +11,7 @@ const SingleCard = () => {
     console.log(filter)
 
     useEffect(()=>{
-       fetch('/public/Cards.json')
+       fetch('Cards.json')
         .then(res=> res.json())
         .then(data => setCard(data))
         const findCard = card.find(card => card.id ===idCard)
