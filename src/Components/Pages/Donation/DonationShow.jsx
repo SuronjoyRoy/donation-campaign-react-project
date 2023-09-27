@@ -5,7 +5,7 @@ const DonationShow = ({card}) => {
 
     return (
         <div>
-            <div style={{background:card_bg_color}} className="card card-side w-[510px] bg-base-100 shadow-xl">
+            <div style={{background:card_bg_color}} className="card card-side w-80 lg:w-[510px] bg-base-100 shadow-xl">
             <figure>
                 <img className="w-[200px] h-[212px]" src={img} alt="Movie"/>
             </figure>
